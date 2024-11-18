@@ -1,17 +1,18 @@
 #Greenfoot project file
+class.NAYAMO.image=NAYAMO\ tujo.jpg
 class.XXX.image=man01.png
 class.hohoho.image=bee.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-<<<<<<< HEAD
-height=585
-=======
-height=400
->>>>>>> 9b700df83dcd19fca460cf5b4f9c7a459663684f
-package.numDependencies=0
-package.numTargets=4
+class.senntou.image=stage.jpg
+dependency1.from=senntou
+dependency1.to=NAYAMO
+dependency1.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=930
+editor.fx.0.y=75
+height=628
+package.numDependencies=1
+package.numTargets=5
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -41,7 +42,7 @@ target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-target3.name=yamano
+target3.name=NAYAMO
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
@@ -54,12 +55,15 @@ target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
+target5.height=50
+target5.name=senntou
+target5.showInterface=false
+target5.type=ClassTarget
+target5.width=80
+target5.x=0
+target5.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=825
-=======
-width=700
->>>>>>> 9b700df83dcd19fca460cf5b4f9c7a459663684f
+width=835
 world.lastInstantiated=MyWorld
-xPosition=903
-yPosition=171
+xPosition=948
+yPosition=187
