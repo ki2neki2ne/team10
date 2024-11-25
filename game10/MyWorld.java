@@ -71,7 +71,7 @@ public class MyWorld extends World
        
 
         @Override
-        public void draw(Graphics2D g, int cellsize);
+        public void draw(Graphics2D g, int cellsize)
         {
             if( !enable ) return;
             if(dimensions == null) {
@@ -111,7 +111,7 @@ public class MyWorld extends World
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
 
-        addObject( new Life(), 1000 , 50 );
+        
 
         addObject( new Start(), 600, 476 );
 
