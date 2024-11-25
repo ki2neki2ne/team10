@@ -55,6 +55,16 @@ public class MyWorld extends World
             else enable = true;
         }
 
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+      
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
+       
+
         @Override
         public void draw(Graphics2D g, int cellsize)
         {
@@ -70,7 +80,8 @@ public class MyWorld extends World
             GraphicsUtilities.drawOutlinedText(g, dimensions, color, java.awt.Color.BLACK);
             g.translate(-xdraw, -ydraw);
         }
-    }   
+    }
+       
     
     public void showTextEx(String text, int x, int y, int size, boolean bold, greenfoot.Color color )
     {
@@ -85,7 +96,9 @@ public class MyWorld extends World
         WorldVisitor.getTextLabels(this).add(new TextLabelEx( text, x, y, size, bold, color ) );
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
+
     }
+
     
     public MyWorld()
     {
