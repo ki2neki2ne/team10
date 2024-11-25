@@ -14,6 +14,6 @@ public class NAYAMO extends Actor
      */
     public void act() 
     {
-        
+        getWorld().addObject( new NAYAMO(), 300 ,200);
     }    
 }

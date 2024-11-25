@@ -110,11 +110,16 @@ public class MyWorld extends World
         super(1200, 676, 1);
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
+<<<<<<< HEAD
 
         
 
         addObject( new Start(), 600, 476 );
 
+=======
+        addObject( new Life(), 1000 , 50 );
+        addObject( new Start(), 600, 476 );
+>>>>>>> 4d5daa317c4c72e22fa7b4a30196cc5677c6d1fb
     }
     
 }
