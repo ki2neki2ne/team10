@@ -92,6 +92,7 @@ public class MyWorld extends World
         super(1200, 676, 1);
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
+        addObject( new Start(), 600, 476 );
     }
     
 }
