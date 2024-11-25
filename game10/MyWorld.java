@@ -56,8 +56,16 @@ public class MyWorld extends World
             else enable = true;
         }
 
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    
+       
+
         @Override
-        public void draw(Graphics2D g, int cellsize)
+        public void draw(Graphics2D g, int cellsize);
         {
             if( !enable ) return;
             if(dimensions == null) {
@@ -86,6 +94,7 @@ public class MyWorld extends World
         WorldVisitor.getTextLabels(this).add(new TextLabelEx( text, x, y, size, bold, color ) );
         
         //showText( "labels: "+WorldVisitor.getTextLabels(this).size(), 80, 20 );
+
     }
     
     public MyWorld()
