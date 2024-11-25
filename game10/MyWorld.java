@@ -10,6 +10,7 @@ public class MyWorld extends World
     // Reffered from core/TextLabel.java
     // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
     // Licence: GPL2
+  
     class TextLabelEx extends TextLabel
     {
         boolean enable;
@@ -60,9 +61,13 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+
+    
+
       
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
+
        
 
         @Override
@@ -105,6 +110,7 @@ public class MyWorld extends World
         super(1200, 676, 1);
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
+        addObject( new Life(), 1000 , 50 );
         addObject( new Start(), 600, 476 );
     }
     
