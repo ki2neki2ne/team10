@@ -62,9 +62,6 @@ public class MyWorld extends World
      * 
      */
 
-      
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        
 
         @Override
         public void draw(Graphics2D g, int cellsize)
@@ -116,6 +113,15 @@ public class MyWorld extends World
         addObject( new Start(), 600, 476 );
 
         addObject( new Life(), 1000 , 50 );
+        addObject( new Start(), 600, 476 );
+
+        addObject( new Start(), 600, 476 );
+
+
+
+        
+
+        addObject( new Start(), 600, 476 );
         addObject( new Start(), 600, 476 );
     }
     
