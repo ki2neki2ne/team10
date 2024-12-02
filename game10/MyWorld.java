@@ -62,13 +62,20 @@ public class MyWorld extends World
      * 
      */
 
+<<<<<<< HEAD
+=======
     
 
+>>>>>>> 10ed2b8d8fbacf7e7f69e75272506d76dc210456
       
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
 
+<<<<<<< HEAD
+    
+=======
        
+>>>>>>> 10ed2b8d8fbacf7e7f69e75272506d76dc210456
 
         @Override
         public void draw(Graphics2D g, int cellsize)
@@ -111,11 +118,23 @@ public class MyWorld extends World
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
 
+        addObject( new Life(), 1000 , 50 );
+
+        addObject( new Start(), 600, 476 );
+
+=======
+<<<<<<< HEAD
+
         
 
         addObject( new Start(), 600, 476 );
         addObject( new Life(), 1000 , 50 );
         addObject( new Start(), 600, 476 );
+<<<<<<< HEAD
+=======
+>>>>>>> 4d5daa317c4c72e22fa7b4a30196cc5677c6d1fb
+>>>>>>> 10ed2b8d8fbacf7e7f69e75272506d76dc210456
+>>>>>>> 5dcd79a4348af2b8c2f98309232086737439bac5
     }
     
 }
