@@ -20,7 +20,11 @@ public class senntou extends World
         super(1200, 676, 1);  
         addObject(new NAYAMO(),530,260);
         
-        addObject( new Life(), 1000 , 50 );
+        addObject( new Life(), 750 , 50 );//一番左
+        addObject( new Life2(), 850 , 50 );
+        addObject( new Life3(), 950 , 50 );
+        addObject( new Life4(), 1050 , 50 );
+        addObject( new Life5(), 1150 , 50 );//一番右
 
         
 
