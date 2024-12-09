@@ -63,7 +63,14 @@ public class MyWorld extends World
      */
 
 
+
     
+
+
+      
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
+
 
 
 
@@ -108,13 +115,8 @@ public class MyWorld extends World
         getBackground().scale( 1200, 676 );
         showTextEx("路上格闘", 600, 226, 200, true, Color.RED );
 
-        addObject( new Start(), 600, 476 );
-
-
 
         
-
-        addObject( new Start(), 600, 476 );
         addObject( new Start(), 600, 476 );
 
     }

@@ -7,8 +7,7 @@ class.Life5.image=herz.png
 class.MyWorld.image=bg_outside_jutaku_yoru.jpg
 class.NAYAMO.image=NAYAMO\ tujo.jpg
 class.Start.image=text_start.png
-class.XXX.image=man01.png
-class.button_start.image=button-red.png
+class.TAINAN.image=baby2.png
 class.hohoho.image=bee.png
 class.senntou.image=bg_outside_jutaku_yoru.jpg
 dependency1.from=senntou
@@ -18,6 +17,7 @@ dependency2.from=senntou
 dependency2.to=Life
 dependency2.type=UsesDependency
 dependency3.from=senntou
+<<<<<<< HEAD
 dependency3.to=Life2
 dependency3.type=UsesDependency
 dependency4.from=senntou
@@ -42,6 +42,23 @@ editor.fx.0.y=100
 height=1056
 package.numDependencies=8
 package.numTargets=13
+=======
+dependency3.to=TAINAN
+dependency3.type=UsesDependency
+dependency4.from=senntou
+dependency4.to=Life
+dependency4.type=UsesDependency
+dependency5.from=Start
+dependency5.to=senntou
+dependency5.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=861
+package.numDependencies=5
+package.numTargets=9
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -92,35 +109,55 @@ target13.width=80
 target13.x=0
 target13.y=0
 target2.height=50
+<<<<<<< HEAD
 target2.name=NAYAMO
+=======
+target2.name=TAINAN
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
+<<<<<<< HEAD
 target3.name=senntou
+=======
+target3.name=button_start
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 target3.showInterface=false
 target3.type=ClassTarget
-target3.width=80
+target3.width=90
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=hohoho
+=======
+target4.name=Start
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=button_start
+=======
+target5.name=Life
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=90
 target5.x=0
 target5.y=0
 target6.height=50
+<<<<<<< HEAD
 target6.name=Life2
+=======
+target6.name=XXX
+>>>>>>> c6cdf1c95e7893e3075f73ec5799e3fb79cf0f5d
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
