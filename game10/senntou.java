@@ -28,6 +28,8 @@ public class senntou extends World
 
         addObject(new NAYAMO(),530,260);
         
+        addObject( new Test_senni(), 400 , 50 );
+        
         addObject( new Life(), 750 , 50 );//一番左
         addObject( new Life2(), 850 , 50 );
         addObject( new Life3(), 950 , 50 );

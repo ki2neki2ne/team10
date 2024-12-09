@@ -6,6 +6,9 @@ public class Button_Result extends Actor
    
     public void act() 
     {
-        // Add your action code here.
+        int x0 = getX();
+         int y0 = getY();
+         
+        
     }    
 }
