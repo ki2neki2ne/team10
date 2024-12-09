@@ -19,6 +19,8 @@ public class senntou extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
          super(1200, 676, 1); 
+         
+         World over = new Gameover();
         addObject(new NAYAMO(),530,260);
         
      
@@ -30,7 +32,11 @@ public class senntou extends World
         addObject(new NAYAMO(),1100,530);
         addObject(new TAINAN(),100,530);
         addObject( new Life(), 1000 , 50 );
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels
+        if( Greenfoot.isKeyDown("enter") )
+        {
+             Greenfoot.setWorld( over );
+        }
 
     }
 }
