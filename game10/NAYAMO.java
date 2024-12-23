@@ -20,6 +20,7 @@
     int n = 0;
     int l = 0;
     int r = 0;
+    int gado = 0;
     if( Greenfoot.isKeyDown( "w" ) ){
         if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "a" ))
         {
@@ -66,13 +67,25 @@
         }
     }
     if( Greenfoot.isKeyDown( "a" ) ){
-            move(-4);
+            if(Greenfoot.isKeyDown("a")&&Greenfoot.isKeyDown("s"))
+            {
+                gado=1;
+            }else if( Greenfoot.isKeyDown( "a" ) ){
+                move(-4);
+            }
     }
     if( Greenfoot.isKeyDown( "d" ) ){
-            move(4);
+            if(Greenfoot.isKeyDown("d")&&Greenfoot.isKeyDown("s"))
+            {
+                gado = 1;
+            }else if( Greenfoot.isKeyDown( "d" ) ){
+                move(4);
+            }
     }
     if( Greenfoot.isKeyDown( "s" ) ){
+        gado=1;
     }
 }
 }
+
 
