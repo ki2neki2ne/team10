@@ -17,11 +17,14 @@ public class Start extends Actor
     public void act() 
     {
          MouseInfo minfo = Greenfoot.getMouseInfo();
+         
          int x0 = getX();
          int y0 = getY();
 
          int w = getImage().getWidth();
          int h = getImage().getHeight();
+         
+         int flag_senntou = 0;
          
          
          World game = new senntou();
@@ -47,7 +50,10 @@ public class Start extends Actor
         }
        if( Greenfoot.isKeyDown("enter") )
         {
+            flag_senntou = 1;
              Greenfoot.setWorld( game );
         }
+        
+        
     }    
 }
