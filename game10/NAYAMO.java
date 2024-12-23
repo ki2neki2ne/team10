@@ -97,8 +97,29 @@
         getWorld().showText( "count = "+count , 100, 50 );
         getWorld().showText( "muteki = "+muteki , 100, 100 );
 
-        Actor actor = getOneIntersectingObject( TAINAN.class );
+        Actor actor = getOneIntersectingObject( Hado1.class );
         if( actor != null && muteki == 0){
+            count++;
+            muteki = 100;
+            getImage().setTransparency(120);
+        }
+        
+        Actor actor2 = getOneIntersectingObject( Hado2.class );
+        if( actor2 != null && muteki == 0){
+            count++;
+            muteki = 100;
+            getImage().setTransparency(120);
+        }
+        
+        Actor actor3 = getOneIntersectingObject( Hado3.class );
+        if( actor3 != null && muteki == 0){
+            count++;
+            muteki = 100;
+            getImage().setTransparency(120);
+        }
+        
+        Actor actor4 = getOneIntersectingObject( Hado4.class );
+        if( actor4 != null && muteki == 0){
             count++;
             muteki = 100;
             getImage().setTransparency(120);
