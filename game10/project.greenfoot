@@ -41,6 +41,7 @@ dependency16.from=Start
 dependency16.to=senntou
 dependency16.type=UsesDependency
 dependency17.from=NAYAMO
+<<<<<<< HEAD
 dependency17.to=Hado1
 dependency17.type=UsesDependency
 dependency18.from=NAYAMO
@@ -48,6 +49,15 @@ dependency18.to=Hado2
 dependency18.type=UsesDependency
 dependency19.from=NAYAMO
 dependency19.to=Hado3
+=======
+dependency17.to=TAINAN
+dependency17.type=UsesDependency
+dependency18.from=Test_senni
+dependency18.to=Gameover
+dependency18.type=UsesDependency
+dependency19.from=Button_Result
+dependency19.to=Gameover
+>>>>>>> e94795ce09b91f18810128f7510554cc0a253460
 dependency19.type=UsesDependency
 dependency2.from=senntou
 dependency2.to=Test_senni
@@ -87,8 +97,13 @@ editor.fx.0.width=816
 editor.fx.0.x=552
 editor.fx.0.y=100
 height=861
+<<<<<<< HEAD
 package.numDependencies=22
 package.numTargets=21
+=======
+package.numDependencies=19
+package.numTargets=20
+>>>>>>> e94795ce09b91f18810128f7510554cc0a253460
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -174,10 +189,17 @@ target18.width=80
 target18.x=0
 target18.y=0
 target19.height=50
+<<<<<<< HEAD
 target19.name=yamano
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=80
+=======
+target19.name=Button_Result
+target19.showInterface=false
+target19.type=ClassTarget
+target19.width=100
+>>>>>>> e94795ce09b91f18810128f7510554cc0a253460
 target19.x=0
 target19.y=0
 target2.height=50
@@ -188,6 +210,7 @@ target2.width=80
 target2.x=0
 target2.y=0
 target20.height=50
+<<<<<<< HEAD
 target20.name=Button_Result
 target20.showInterface=false
 target20.type=ClassTarget
@@ -201,6 +224,14 @@ target21.type=ClassTarget
 target21.width=80
 target21.x=0
 target21.y=0
+=======
+target20.name=MyWorld
+target20.showInterface=false
+target20.type=ClassTarget
+target20.width=80
+target20.x=0
+target20.y=0
+>>>>>>> e94795ce09b91f18810128f7510554cc0a253460
 target3.height=50
 target3.name=Hado2
 target3.showInterface=false
@@ -219,14 +250,14 @@ target5.height=50
 target5.name=Hado3
 target5.showInterface=false
 target5.type=ClassTarget
-target5.width=80
+target5.width=100
 target5.x=0
 target5.y=0
 target6.height=50
 target6.name=senntou
 target6.showInterface=false
 target6.type=ClassTarget
-target6.width=80
+target6.width=90
 target6.x=0
 target6.y=0
 target7.height=50
