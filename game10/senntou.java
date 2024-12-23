@@ -22,10 +22,10 @@ public class senntou extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
 
-<<<<<<< HEAD
-        super(1200, 676, 1);  
+
         
-=======
+        
+
          super(1200, 676, 1); 
          int x = Greenfoot.getRandomNumber(600);
          
@@ -34,8 +34,8 @@ public class senntou extends World
 
     
 
-        addObject(new NAYAMO(),530,260);
->>>>>>> 316885b4516311a0e2240a24806793ff7a4e1913
+        
+
         
         addObject( new Test_senni(), 400 , 50 );
         
@@ -50,12 +50,12 @@ public class senntou extends World
         
         addObject(new NAYAMO(),1100,530);
         addObject(new TAINAN(),100,530);
-<<<<<<< HEAD
+
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
         
  
-=======
+
         
      
        
@@ -69,7 +69,7 @@ public class senntou extends World
         
 
      
->>>>>>> 316885b4516311a0e2240a24806793ff7a4e1913
+
 
     }
      public void act()
