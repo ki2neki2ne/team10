@@ -53,5 +53,7 @@ public class Start extends Actor
             flag_senntou = 1;
              Greenfoot.setWorld( game );
         }
+        
+        
     }    
 }

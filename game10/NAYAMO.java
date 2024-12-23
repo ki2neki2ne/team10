@@ -85,7 +85,28 @@
     if( Greenfoot.isKeyDown( "s" ) ){
         gado=1;
     }
+    int count = 0;
+    int muteki = 0;
+
+        if(muteki > 0){
+            muteki--;
+            if( muteki == 0) getImage().setTransparency(255);
+        }
+        
+
+        getWorld().showText( "count = "+count , 100, 50 );
+        getWorld().showText( "muteki = "+muteki , 100, 100 );
+
+        Actor actor = getOneIntersectingObject( TAINAN.class );
+        if( actor != null && muteki == 0){
+            count++;
+            muteki = 100;
+            getImage().setTransparency(120);
+        }
+
+    }    
+
 }
-}
+
 
 

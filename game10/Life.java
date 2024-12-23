@@ -14,7 +14,8 @@ public class Life extends Actor
      */
     public void act() 
     {
-        World game = new Gameover();
+        
+        
         
        
     }    
