@@ -20,7 +20,7 @@ public class senntou extends World
 
 
         super(1200, 676, 1);  
-        addObject(new NAYAMO(),530,260);
+        
         
         addObject( new Life(), 750 , 50 );//一番左
         addObject( new Life2(), 850 , 50 );
@@ -34,6 +34,8 @@ public class senntou extends World
         addObject(new NAYAMO(),1100,530);
         addObject(new TAINAN(),100,530);
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        
+        
  
 
     }
