@@ -27,7 +27,9 @@ public class Hado1 extends Actor
             move(4);
             
             if( isAtEdge() ){
+                senntou.counter++;
             getWorld().removeObject( this );
+            
         }
       
     }

@@ -1,27 +1,31 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-
-public class Button_Result extends Actor
+/**
+ * Write a description of class Restart here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Restart extends Actor
 {
-     
-   
+    /**
+     * Act - do whatever the Restart wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
         MouseInfo minfo = Greenfoot.getMouseInfo();
-         World result = new Result();
-         
-          int x0 = getX();
+         World restart = new MyWorld();
+        
+         int x0 = getX();
          int y0 = getY();
 
          int w = getImage().getWidth();
          int h = getImage().getHeight();
          
-         int flag=1;
          
-         
-        ((Gameover)getWorld()).showTextEx("スコアを表示", x0-13, y0, 56, false, Color.CYAN );
-        
-         if( minfo != null ){
+        // Add your action code here.
+        if( minfo != null ){
 
             // マウス座標取得
             int x = minfo.getX();
@@ -32,12 +36,15 @@ public class Button_Result extends Actor
             // クリックした時だけ数値が入る。押しっぱなしの時やボタンを離した時は 0 になるので注意
             int button = minfo.getButton();
             if( button != 0 ){
+                
+                
                 if((x>=x0-w/2&&x<=x0+w/2)&&(y>=y0-h/2&&y<=y0+h/2))
                 {
-                    flag=0;
-                    Greenfoot.setWorld( result );
+                    
+                    Greenfoot.setWorld( restart );
                     
                 }
+           
                 
             }
         }

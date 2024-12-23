@@ -16,6 +16,8 @@ public class senntou extends World
     
     private int x = Greenfoot.getRandomNumber(100);
     
+    static public int counter=0;
+    
     public senntou()
     {    
 
@@ -66,6 +68,9 @@ public class senntou extends World
           spone2--;
           spone3--;
           spone4--;
+          
+          showText( "" + counter, 100, 50 );
+          //リザルト画面でこれまたはExshowTextを追加した後、↑は消す
           
           if(spone1==0)
          {
