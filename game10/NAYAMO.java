@@ -21,6 +21,10 @@
     int l = 0;
     int r = 0;
     int gado = 0;
+    
+    int count = 0;
+    int muteki = 0;
+    
     if( Greenfoot.isKeyDown( "w" ) ){
         if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "a" ))
         {
@@ -85,8 +89,7 @@
     if( Greenfoot.isKeyDown( "s" ) ){
         gado=1;
     }
-    int count = 0;
-    int muteki = 0;
+    
 
         if(muteki > 0){
             muteki--;

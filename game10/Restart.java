@@ -35,6 +35,8 @@ public class Restart extends Actor
             // マウスボタンのクリック時に押したボタン番号を取得
             // クリックした時だけ数値が入る。押しっぱなしの時やボタンを離した時は 0 になるので注意
             int button = minfo.getButton();
+            
+            ((Result)getWorld()).showTextEx("もう一度", 900, 550, 56, false, Color.CYAN );
             if( button != 0 ){
                 
                 

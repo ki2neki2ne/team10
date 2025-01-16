@@ -115,7 +115,8 @@ public class Result extends World
     
         showTextEx("ゲームオーバー", 600, 226, 200, true, Color.RED );
         
-         addObject( new Restart(), 600, 550 );
+        
+         addObject( new Restart(), 900, 550 );
          
          showTextEx( "" + senntou.counter, 600, 440,200,false,Color.GREEN );
         
