@@ -8,6 +8,7 @@
      */
     public class NAYAMO extends Actor
     {
+        
         /**
          * Act - do whatever the yamano wants to do. This method is called whenever
          * the 'Act' or 'Run' button gets pressed in the environment.
@@ -25,46 +26,55 @@
     int count = 0;
     int muteki = 0;
     
+    int i=0;
+    int m=0;
+    int b=0;
+    
+    Actor actor = getOneIntersectingObject( Hado1.class );
+        Actor actor2 = getOneIntersectingObject( Hado2.class );
+        Actor actor3 = getOneIntersectingObject( Hado3.class );
+        Actor actor4 = getOneIntersectingObject( Hado4.class );
+    
     if( Greenfoot.isKeyDown( "w" ) ){
         if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "a" ))
         {
-            for(int i = 0; i<=30; i++){
+            for(i = 0; i<=30; i++){
               setLocation( x-l,y-i*6);
               Greenfoot.delay(1);
               n++;
               l+=2;
             }
-            for(int m = 0; m<=10; m++){
+            for(m = 0; m<=10; m++){
                 setLocation( x-m,y);
             }
-            for(int b = n; n>=0; n--){
+            for(b = n; n>=0; n--){
               setLocation( x-l,y-n*6);
               Greenfoot.delay(1);
               l+=2;
             }
         }else if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "d" ))
         {
-            for(int i = 0; i<=30; i++){
+            for(i = 0; i<=30; i++){
               setLocation( x+r,y-i*6);
               Greenfoot.delay(1);
               n++;
               r+=2;
             }
-            for(int m = 0; m<=10; m++){
+            for(m = 0; m<=10; m++){
                 setLocation( x+m,y);
             }
-            for(int b = n; n>=0; n--){
+            for(b = n; n>=0; n--){
               setLocation( x+r,y-n*6);
               Greenfoot.delay(1);
               r+=2;
             }
         }else if( Greenfoot.isKeyDown( "w" ) ){
-            for(int i = 0; i<=30; i++){
+            for(i = 0; i<=30; i++){
               setLocation( x,y-i*6);
               Greenfoot.delay(1);
               n++;
             }
-            for(int b = n; n>=0; n--){
+            for(b = n; n>=0; n--){
               setLocation( x,y-n*6);
               Greenfoot.delay(1);
             }
@@ -100,28 +110,28 @@
         getWorld().showText( "count = "+count , 100, 50 );
         getWorld().showText( "muteki = "+muteki , 100, 100 );
 
-        Actor actor = getOneIntersectingObject( Hado1.class );
+        //Actor actor = getOneIntersectingObject( Hado1.class );
         if( actor != null && muteki == 0){
             count++;
             muteki = 100;
             getImage().setTransparency(120);
         }
         
-        Actor actor2 = getOneIntersectingObject( Hado2.class );
+        //Actor actor2 = getOneIntersectingObject( Hado2.class );
         if( actor2 != null && muteki == 0){
             count++;
             muteki = 100;
             getImage().setTransparency(120);
         }
         
-        Actor actor3 = getOneIntersectingObject( Hado3.class );
+        //Actor actor3 = getOneIntersectingObject( Hado3.class );
         if( actor3 != null && muteki == 0){
             count++;
             muteki = 100;
             getImage().setTransparency(120);
         }
         
-        Actor actor4 = getOneIntersectingObject( Hado4.class );
+        //Actor actor4 = getOneIntersectingObject( Hado4.class );
         if( actor4 != null && muteki == 0){
             count++;
             muteki = 100;
@@ -129,6 +139,7 @@
         }
 
     }    
+    
 
 }
 

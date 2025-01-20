@@ -16,11 +16,17 @@ public class Hado3 extends Actor
     }
     public void act() 
     {
+        Actor actor = getOneIntersectingObject( NAYAMO.class );
          move(4);
          
          if( isAtEdge() ){
              senntou.counter++;
              getWorld().removeObject( this );
             }
+            if( actor != null ){
+         // TARO とぶつかった時の処理を書く
+         senntou.Lcounter--;
+         getWorld().removeObject( this );
+            }  
     }    
 }

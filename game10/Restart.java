@@ -42,7 +42,7 @@ public class Restart extends Actor
                 
                 if((x>=x0-w/2&&x<=x0+w/2)&&(y>=y0-h/2&&y<=y0+h/2))
                 {
-                    
+                    senntou.Lcounter=5;
                     Greenfoot.setWorld( restart );
                     
                 }

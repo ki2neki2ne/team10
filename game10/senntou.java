@@ -14,9 +14,13 @@ public class senntou extends World
     private int spone3=400;
     private int spone4=500;
     
+    static public int Lcounter=5;
+    
     private int x = Greenfoot.getRandomNumber(100);
     
     static public int counter=0;
+    
+    World over = new Gameover();
     
     public senntou()
     {    
@@ -33,9 +37,9 @@ public class senntou extends World
         
 
          super(1200, 676, 1); 
-         int x = Greenfoot.getRandomNumber(600);
+         x = Greenfoot.getRandomNumber(600);
          
-         World over = new Gameover();
+         
 
 
     
@@ -60,6 +64,9 @@ public class senntou extends World
         
         addObject(new NAYAMO(),1100,530);
         addObject(new TAINAN(),100,530);
+        
+        counter=0;
+        Lcounter=5;
 
 
 
@@ -77,6 +84,7 @@ public class senntou extends World
         {
              Greenfoot.setWorld( over );
         }
+       
         
         
 
@@ -92,6 +100,7 @@ public class senntou extends World
           spone4--;
           
           showText( "" + counter, 100, 50 );
+          showText( "" + Lcounter, 300, 50 );
           //リザルト画面でこれまたはExshowTextを追加した後、↑は消す
           
           if(spone1==0)
@@ -119,6 +128,11 @@ public class senntou extends World
              if(x<100)  addObject(new Hado4(),300,500);
              spone4=500;
             }
+         
+             if(Lcounter==0)
+        {
+            Greenfoot.setWorld( over );
+        }
           
         }
 
