@@ -49,8 +49,9 @@ public class senntou extends World
         
 
         
+
         addObject( new Test_senni(), 400 , 50 );
-             
+
 
         addObject( new Life(), 750 , 50 );//一番左
         addObject( new Life2(), 850 , 50 );
