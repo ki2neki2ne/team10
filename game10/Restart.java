@@ -1,61 +1,54 @@
-import greenfoot.*;  
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
 /**
- * Write a description of class Start here.
+ * Write a description of class Restart here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Start extends Actor
+public class Restart extends Actor
 {
     /**
-     * Act - do whatever the Start wants to do. This method is called whenever
+     * Act - do whatever the Restart wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int w = getImage().getWidth();
-    int h = getImage().getHeight();
-    //Actor start = getOneIntersectingObject( Start.class );
     public void act() 
     {
-         MouseInfo minfo = Greenfoot.getMouseInfo();
-         
+        MouseInfo minfo = Greenfoot.getMouseInfo();
+         World restart = new MyWorld();
+        
          int x0 = getX();
          int y0 = getY();
 
          int w = getImage().getWidth();
          int h = getImage().getHeight();
          
-         int flag_senntou = 0;
-         int x;
-         int y;
-         int button;
          
-         World game = new senntou();
-         
+        // Add your action code here.
         if( minfo != null ){
 
             // マウス座標取得
-            x = minfo.getX();
-            y = minfo.getY();
+            int x = minfo.getX();
+            int y = minfo.getY();
             
             
             // マウスボタンのクリック時に押したボタン番号を取得
             // クリックした時だけ数値が入る。押しっぱなしの時やボタンを離した時は 0 になるので注意
-            button = minfo.getButton();
+            int button = minfo.getButton();
+            
+            ((Result)getWorld()).showTextEx("もう一度", 900, 550, 56, false, Color.CYAN );
             if( button != 0 ){
+                
+                
                 if((x>=x0-w/2&&x<=x0+w/2)&&(y>=y0-h/2&&y<=y0+h/2))
                 {
+                    senntou.Lcounter=5;
+                    Greenfoot.setWorld( restart );
                     
-                    Greenfoot.setWorld( game );
                 }
+           
                 
             }
         }
-       if( Greenfoot.isKeyDown("enter") )
-        {
-            flag_senntou = 1;
-             Greenfoot.setWorld( game );
-        }
-        
-        
     }    
 }

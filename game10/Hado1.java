@@ -8,12 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Hado1 extends Actor
 {
-    /**
-     * Act - do whatever the Hado1 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    private int timer = 100;
-    private int flag_tama = 0;
+   
     
     public Hado1()
     {
@@ -22,16 +17,19 @@ public class Hado1 extends Actor
     }
     public void act() 
     {
+        Actor actor = getOneIntersectingObject( NAYAMO.class );
+         move(4);
          
-       
-            move(4);
-            
-            if( isAtEdge() ){
-            getWorld().removeObject( this );
-        }
-      
-    }
-      
-    
-    
+         if( isAtEdge() ){
+             senntou.counter++;
+             getWorld().removeObject( this );
+            }
+        
+         if( actor != null ){
+         // TARO とぶつかった時の処理を書く
+         senntou.Lcounter--;
+         getWorld().removeObject( this );
+            }   
+                
+    }    
 }

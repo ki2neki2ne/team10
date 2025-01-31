@@ -8,7 +8,7 @@
      */
     public class NAYAMO extends Actor
     {
-        private int gravity;
+       private int gravity;
         private void checkForJump()
 {
     Actor a = getOneIntersectingObject(senntou.class);
@@ -29,13 +29,71 @@
     int l = 0;
     int r = 0;
     int gado = 0;
+
     int jump = 0;
     int tcnt = 0;
+    int count = 0;
+    int muteki = 0;
     
+    int i=0;
+    int m=0;
+    int b=0;
    
     if( Greenfoot.isKeyDown( "w" ) ){
         
-            
+
+    
+ 
+    
+    Actor actor = getOneIntersectingObject( Hado1.class );
+        Actor actor2 = getOneIntersectingObject( Hado2.class );
+        Actor actor3 = getOneIntersectingObject( Hado3.class );
+        Actor actor4 = getOneIntersectingObject( Hado4.class );
+    }
+    if( Greenfoot.isKeyDown( "w" ) ){
+        if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "a" ))
+        {
+            for(i = 0; i<=30; i++){
+              setLocation( x-l,y-i*6);
+              Greenfoot.delay(1);
+              n++;
+              l+=2;
+            }
+            for(m = 0; m<=10; m++){
+                setLocation( x-m,y);
+            }
+            for(b = n; n>=0; n--){
+              setLocation( x-l,y-n*6);
+              Greenfoot.delay(1);
+              l+=2;
+            }
+        }else if(Greenfoot.isKeyDown( "w" )&&Greenfoot.isKeyDown( "d" ))
+        {
+            for(i = 0; i<=30; i++){
+              setLocation( x+r,y-i*6);
+              Greenfoot.delay(1);
+              n++;
+              r+=2;
+            }
+            for(m = 0; m<=10; m++){
+                setLocation( x+m,y);
+            }
+            for(b = n; n>=0; n--){
+              setLocation( x+r,y-n*6);
+              Greenfoot.delay(1);
+              r+=2;
+            }
+        }else if( Greenfoot.isKeyDown( "w" ) ){
+            for(i = 0; i<=30; i++){
+              setLocation( x,y-i*6);
+              Greenfoot.delay(1);
+              n++;
+            }
+            for(b = n; n>=0; n--){
+              setLocation( x,y-n*6);
+              Greenfoot.delay(1);
+            }
+        }
     }
     if( Greenfoot.isKeyDown( "a" ) ){
             if(Greenfoot.isKeyDown("a")&&Greenfoot.isKeyDown("s"))
@@ -56,8 +114,7 @@
     if( Greenfoot.isKeyDown( "s" ) ){
         gado=1;
     }
-    int count = 0;
-    int muteki = 0;
+    
 
         if(muteki > 0){
             muteki--;
@@ -97,6 +154,7 @@
         }
 
     }    
+    
 
 }
 
