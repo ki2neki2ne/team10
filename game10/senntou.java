@@ -102,29 +102,30 @@ public class senntou extends World
           showText( "" + counter, 100, 50 );
           showText( "" + Lcounter, 300, 50 );
           //リザルト画面でこれまたはExshowTextを追加した後、↑は消す
-          
+          //x = Greenfoot.getRandomNumber(100);
           if(spone1==0)
          {
              x = Greenfoot.getRandomNumber(100);
+             //x = Greenfoot.getRandomNumber(100);
              if(x<25)  addObject(new Hado1(),300,200);
              spone1=200;
   
             }
             if(spone2==0)
          {
-             x = Greenfoot.getRandomNumber(100);
+             //x = Greenfoot.getRandomNumber(100);
              if(x<50)  addObject(new Hado2(),300,300);
              spone2=300;
             }
             if(spone3==0)
          {
-             x = Greenfoot.getRandomNumber(100);
+             //x = Greenfoot.getRandomNumber(100);
              if(x<75)  addObject(new Hado3(),300,400);
              spone3=400;
             }
             if(spone4==0)
          {
-             x = Greenfoot.getRandomNumber(100);
+             //x = Greenfoot.getRandomNumber(100);
              if(x<100)  addObject(new Hado4(),300,500);
              spone4=500;
             }
